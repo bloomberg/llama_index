@@ -83,7 +83,7 @@ class SolrReader(BasePydanticReader):
                 "text": doc[field],
                 "embedding": doc.get(embedding),
                 "metadata": {
-                    metadata_field: doc.get(metadata_field, {})
+                    metadata_field: doc[metadata_field]
                     for metadata_field in (metadata_fields or [])
                     if metadata_field in doc
                 },
