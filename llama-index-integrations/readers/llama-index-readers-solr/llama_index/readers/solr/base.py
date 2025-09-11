@@ -71,7 +71,7 @@ class SolrReader(BasePydanticReader):
             }
             results = self._client.search(**query_params)
         except Exception as e:  # pragma: no cover
-            raise ValueError(f"Failed to query Solr endpoint: {e!s}")
+            raise ValueError(f"Failed to query Solr endpoint: {e!s}") from e
 
         documents: list[Document] = []
         for doc in results.docs:
