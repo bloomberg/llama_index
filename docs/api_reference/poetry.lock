@@ -336,18 +336,19 @@ extras = ["regex"]
 
 [[package]]
 name = "banks"
-version = "2.2.0"
+version = "2.4.2"
 description = "A prompt programming language"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "banks-2.2.0-py3-none-any.whl", hash = "sha256:963cd5c85a587b122abde4f4064078def35c50c688c1b9d36f43c92503854e7d"},
-    {file = "banks-2.2.0.tar.gz", hash = "sha256:d1446280ce6e00301e3e952dd754fd8cee23ff277d29ed160994a84d0d7ffe62"},
+    {file = "banks-2.4.2-py3-none-any.whl", hash = "sha256:5fe407cc48c101f3e13d1cf732b83b8246003337612f13c0705d2e81f6faffb7"},
+    {file = "banks-2.4.2.tar.gz", hash = "sha256:cda6013bd377ea7b701933578bfb9370fc21ad70bc13cedfc3f5cb2c034ca3dc"},
 ]
 
 [package.dependencies]
 deprecated = "*"
+filetype = ">=1.2.0"
 griffe = "*"
 jinja2 = "*"
 platformdirs = "*"
