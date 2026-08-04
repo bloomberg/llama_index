@@ -92,7 +92,7 @@ comm==0.2.2
     #   ipywidgets
 coverage==7.9.2
     # via pytest-cov
-cryptography==45.0.5
+cryptography==50.0.0
     # via
     #   types-pyopenssl
     #   types-redis
